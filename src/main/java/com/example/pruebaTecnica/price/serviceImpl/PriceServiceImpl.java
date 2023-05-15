@@ -48,7 +48,7 @@ public class PriceServiceImpl implements PriceService {
 	@Override
 	public PostPricesGetOutputDto find(PostPricesGetInputDto inputDto) {
 		Optional<Price> price = priceRepository.findFirstByProductIdAndBrandIdAndStartDateBeforeAndEndDateAfterOrderByPriorityDesc(
-		inputDto.getProducyId(), inputDto.getBrandId(),
+		inputDto.getProductId(), inputDto.getBrandId(),
 		LocalDateTime.parse(inputDto.getDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd-HH.mm.ss")),
 		LocalDateTime.parse(inputDto.getDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd-HH.mm.ss")));
 
