@@ -6,7 +6,7 @@ Para lanzar la aplicación debemos ejecutar el siguiente commando:
 Con eso basta para lanzar la aplicación en local y dicha aplicación esta disponible en el puerto 8080.
 
 ## Uso de la aplicación
-Para probar el funcionamiendo de la aplicación podemos pasar ejecutar el siguiente comando: 
+Para probar el funcionamiendo de la aplicación podemos ejecutar el siguiente comando: 
 ~~~ 
 curl --location 'http://localhost:8080/prices/get' \
 --header 'Content-Type: application/json' \
